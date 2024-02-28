@@ -1,0 +1,9 @@
+FROM python:3.7
+WORKDIR /app
+ENV TZ=Europe/Moscow
+COPY python_example_api/* /app/
+COPY unit_test/* /app/
+
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+CMD [ "python3", "./test_app.py" ]
