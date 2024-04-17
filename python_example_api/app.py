@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/status', methods=['GET'])
 def get_status():
-    status = {'status': 'running_v1'}
+    status = {'status': 'running_v2'}
     return jsonify(status)
 
 
