@@ -10,7 +10,7 @@ class TestApp(unittest.TestCase):
     def test_get_status(self):
         response = self.app.get('/status')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {'status': 'running_v1'})
+        self.assertEqual(response.json, {'status': 'running_v2'})
 
 if __name__ == '__main__':
     unittest.main()
