@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-ololo=5
 
 
 @app.route('/status', methods=['GET'])
